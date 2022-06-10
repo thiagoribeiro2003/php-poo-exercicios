@@ -27,4 +27,3 @@
     <h2>Páginas: <?=$livro->getPaginas()?></h2>
 </body>
 </html>
-ll
