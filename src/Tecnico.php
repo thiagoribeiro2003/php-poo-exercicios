@@ -8,7 +8,7 @@ private array $formato = ["digital", "físico"];
 
 public function getFormato():string
 {
-return implode($this->formato);
+return implode(", ",$this->formato);
 }
 
 

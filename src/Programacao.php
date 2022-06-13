@@ -1,7 +1,7 @@
 <?php
 require_once "Tecnico.php";
 
-Class Programacao
+Class Programacao extends Tecnico
 {
     private string $area;
 

@@ -25,11 +25,14 @@
     // Criação do objeto Programacao
     $programacao = new Programacao;
     $programacao->setArea('Web');
+    $programacao -> setTitulo('Olá Mundo');
     
     // Criação do objeto Didatico
     $didatico = new Didatico;
     $didatico->setDisciplina('Programação');
     $didatico->setNivel(['Superior']);
+
+    $didatico->setPaginas(500);
     ?>
 
     <h1>Livro</h1>
@@ -39,6 +42,8 @@
     <hr>
 
     
+
+
     <h2>Formato</h2>
     <p><strong>Formato:<strong> <?=$tecnico->getFormato()?></p>
     <hr>
@@ -46,9 +51,18 @@
     <h2>Informações do Livro</h2>
     <p><strong>Área:</strong> <?=$programacao->getArea()?></p>
     <p><strong>Disciplina:</strong> <?=$didatico->getDisciplina()?></p>
-    <p><strong>Nível:</strong> <?=implode(',', $didatico->getNivel()) ?></h2>
 
-    <h2></h2>
+    <p><strong>Nível:</strong> <?= implode(',', $didatico->getNivel()) ?></h2>
+    <?php
+    foreach ($didatico->getNivel() as $nivel) { ?>
+        <p> <?=$nivel?> </p>
+  <?php }?>
+
+  <?php if ($didatico->getPaginas() > 100) { ?>
+    <p>Traga uma mochila</p>
+  <?php } ?>
+
+    
 
 
     
