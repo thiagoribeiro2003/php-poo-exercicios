@@ -5,7 +5,11 @@ abstract class Livro
     private string $autor;
     private int $paginas = 0;  
 
-
+    /* Deixando os titulos em letra maiúscula */
+    public function formataTitulo(string $titulo):string
+    {
+        return "<strong>".mb_strtoupper($titulo)."</strong>";
+    }
 //getters e setters
 
 /*
