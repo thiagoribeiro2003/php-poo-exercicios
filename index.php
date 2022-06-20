@@ -10,10 +10,15 @@
     <h1>PHP POO - EXERCICIO 4 (Namespaces, Composer e Autoload de classes) </h1>
 
     <?php
+    /*Require do autoload de classes*/
     require_once "vendor/autoload.php";
 
+   /*Usando as classes a partir de um namespaces comum*/ 
+    $livroWeb = new Exercicio\Web;
+    
+
     // Criação do objeto Tecnico
-    $tecnico = new Exercicio\Tecnico;
+    $tecnico = new Exercicio\Tecnico; /*Usando as classes a partir de um namespaces comum*/
     $tecnico->setFormato(['físico']);
     $tecnico->setTitulo('Manual Do Back-End');
     $tecnico->setAutor('Genérico');
@@ -22,12 +27,12 @@
     
 
     // Criação do objeto Programacao
-    $programacao = new Exercicio\Programacao;
+    $programacao = new Exercicio\Programacao; /*Usando as classes a partir de um namespaces comum*/
     $programacao->setArea('Web');
     $programacao -> setTitulo('Olá Mundo');
     
     // Criação do objeto Didatico
-    $didatico = new Exercicio\Didatico;
+    $didatico = new Exercicio\Didatico; /*Usando as classes a partir de um namespaces comum*/
     $didatico->setDisciplina('Programação');
     $didatico->setNivel(['Superior']);
 

@@ -1,6 +1,6 @@
 <?php
 namespace Exercicio;
-require_once "Tecnico.php";
+
 
 Class Didatico extends Tecnico
 {
