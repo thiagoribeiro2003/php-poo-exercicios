@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,9 +10,7 @@
     <h1>PHP POO - EXERCICIO 4 (Namespaces, Composer e Autoload de classes) </h1>
 
     <?php
-    require_once "src/Tecnico.php";
-    require_once "src/Programacao.php";
-    require_once "src/Didatico.php";
+    require_once "vendor/autoload.php";
 
     // Criação do objeto Tecnico
     $tecnico = new Exercicio\Tecnico;
