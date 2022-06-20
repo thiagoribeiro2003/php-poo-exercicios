@@ -1,4 +1,5 @@
 <?php
+namespace Exercicio;
 require_once "Tecnico.php";
 
 Class Programacao extends Tecnico

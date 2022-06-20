@@ -1,13 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP POO - EXERCICIOs 3</title>
+    <title>PHP POO - EXERCICIOs 4</title>
 </head>
 <body>
-    <h1>PHP POO - EXERCICIO 3</h1>
+    <h1>PHP POO - EXERCICIO 4 (Namespaces, Composer e Autoload de classes) </h1>
 
     <?php
     require_once "src/Tecnico.php";
@@ -15,7 +16,7 @@
     require_once "src/Didatico.php";
 
     // Criação do objeto Tecnico
-    $tecnico = new Tecnico;
+    $tecnico = new Exercicio\Tecnico;
     $tecnico->setFormato(['físico']);
     $tecnico->setTitulo('Manual Do Back-End');
     $tecnico->setAutor('Genérico');
@@ -24,12 +25,12 @@
     
 
     // Criação do objeto Programacao
-    $programacao = new Programacao;
+    $programacao = new Exercicio\Programacao;
     $programacao->setArea('Web');
     $programacao -> setTitulo('Olá Mundo');
     
     // Criação do objeto Didatico
-    $didatico = new Didatico;
+    $didatico = new Exercicio\Didatico;
     $didatico->setDisciplina('Programação');
     $didatico->setNivel(['Superior']);
 
